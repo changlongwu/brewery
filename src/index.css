@@ -1,0 +1,84 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.whole-page{
+    background-image: url(./brewery.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Add this line */
+
+    padding-left: 300px;
+}
+
+
+/* SideBar */
+.SideBar {
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    
+    height: 100%;
+    
+    overflow-x: hidden;
+    padding-left: 20px;
+    
+    
+    width: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: hsla(0, 0%, 100%, .1);
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+
+li{
+    list-style: none;
+}
+
+.Card{
+    backdrop-filter: blur(2px);
+    background-color: hsla(0, 0%, 100%, .1);
+    box-shadow: 0 15px 25px hsla(0, 2%, 50%, .2);
+    margin-bottom: 30px;
+    width: 300px;
+    margin: 20px;
+
+    text-align: center;
+}
+
+
+th{
+    font-size: 30px;
+}
+
+.BreweriesInfo{
+    margin-top: 40px;
+}
+
+.Filter{
+    padding-top: 40px;
+    
+}
+
+
+/* Layout home button */
+nav{
+    position:fixed;
+    top:0;
+    right: 0;
+}
+.home-link{
+    border:1px white;
+    background: #1d1f1d;
+    width: 75px;
+    text-align: center;
+    margin-right: 20px;
+    border-radius: 2px;
+    
+}
